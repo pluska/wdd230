@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&display=swap');
+
+:root {
+  --primary-color: #002b5b;
+  --secundary-color: #2b4865;
+  --alternative-color: #256d85;
+  --contrast-color: #a10035;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --heading-typography: "Mulish", sans-serif;
+  --body-typography: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: var(--body-typography);
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-typography);
+}
+ul li {
+  list-style: none;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 150px auto 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+header img {
+  grid-column: 2/3;
+  border-radius: 5px
+}
+
+header h1 {
+  grid-column: 3/4;
+}
+
+nav {
+  background-color: var(--secundary-color);
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav ul li {
+  margin: 0.5rem;
+}
+
+nav ul li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--contrast-color);
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  justify-items: center;
+}
+
+.card {
+  width: 600px;
+  background-color: var(--white-color);
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card h3 {
+  margin: 0;
+  padding: 1rem 0;
+  color : var(--white-color);
+  width: 100%;
+  background-color: var(--primary-color);
+  border-radius: 5px 5px 0 0;
+}
+.card ul {
+  text-align: left;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  text-align: center;
+}
