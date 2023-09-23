@@ -1,0 +1,20 @@
+@media screen and (min-width: 800px) {
+  nav ul {
+    flex-direction: row;
+  }
+
+  main {
+    max-width: 1600px;
+    min-height: 52vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+  }
+
+  main h2 {
+    grid-column: 1/3;
+  }
+
+}

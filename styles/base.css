@@ -14,7 +14,6 @@
 }
 
 body {
-  margin: 0;
   background-color: var(--light-color);
   color: var(--dark-color);
   font-family: var(--body-typography);
@@ -22,9 +21,6 @@ body {
 
 h1, h2, h3 {
   font-family: var(--heading-typography);
-}
-ul li {
-  list-style: none;
 }
 
 header {
@@ -80,6 +76,11 @@ main {
   justify-items: center;
 }
 
+main h2 {
+  margin: 1.5rem;
+  grid-column: 1/2;
+}
+
 .card {
   width: 600px;
   background-color: var(--white-color);
@@ -87,6 +88,7 @@ main {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+
 }
 .card h3 {
   margin: 0;
@@ -97,7 +99,13 @@ main {
   border-radius: 5px 5px 0 0;
 }
 .card ul {
+  margin: 1.5rem;
   text-align: left;
+}
+
+#weather, #visits {
+  padding: 1rem;
+  text-align: center;
 }
 
 footer {
