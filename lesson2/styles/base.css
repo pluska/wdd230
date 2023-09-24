@@ -1,0 +1,93 @@
+header {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+header h1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size: 2rem;
+}
+
+header h2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 1.8rem;
+}
+
+main {
+  min-height: 52vh;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+}
+
+.card {
+  width: 500px;
+  background-color: var(--white-color);
+  margin: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr;
+}
+
+.card-header {
+  background-color: var(--primary-color);
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-information {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.card-information h4 {
+  font-size: 1rem;
+}
+
+.card-information a {
+  font-size: 0.8rem;
+}
+
+.card-image {
+  width: 450px;
+  margin: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 1rem;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish&display=swap');
+
+:root {
+  --primary-color: #002b5b;
+  --secundary-color: #2b4865;
+  --alternative-color: #256d85;
+  --contrast-color: #a10035;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
+  --heading-typography: "Montserrat", sans-serif;
+  --body-typography: "Mulish", sans-serif;
+}
+
+body, h1, h2, h3, h4 {
+  font-family: var(--heading-typography);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: var(--body-typography);
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+a {
+  font-family: var(--body-typography);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--contrast-color);
+  text-decoration: underline;
+}

@@ -1,0 +1,13 @@
+@media screen and (min-width: 1000px) {
+  main {
+    grid-template-columns: auto auto auto;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .card-image {
+    width: 300px;
+  }
+}

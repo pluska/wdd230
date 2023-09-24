@@ -1,0 +1,32 @@
+@media screen and (max-width: 767px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .card-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-information h4 {
+    font-size: 0.9rem;
+  }
+  .card-information a {
+    font-size: 0.8rem;
+  }
+
+  .card-image {
+    width: 250px;
+  }
+
+  .card-body p {
+    font-size: 0.75rem;
+  }
+
+}
