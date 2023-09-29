@@ -108,6 +108,13 @@ main h2 {
   text-align: center;
 }
 
+.map {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  border-radius: 5px;
+}
+
 footer {
   background-color: var(--primary-color);
   color: var(--white-color);
