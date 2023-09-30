@@ -1,0 +1,60 @@
+@media screen and (max-width: 767px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+  }
+
+  main h2 {
+    font-size: 1.2rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  main .card:nth-child(2) {
+    grid-column: 1/2 !important;
+    grid-row: 2/3 !important;
+  }
+
+  main .card:nth-child(3) {
+    grid-column: 1/2 !important;
+    grid-row: 3/4 !important;
+  }
+
+  .card-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-information h4 {
+    font-size: 0.9rem;
+  }
+  .card-information a {
+    font-size: 0.8rem;
+  }
+
+  .card-image {
+    width: 250px;
+  }
+
+  .card-body p {
+    font-size: 0.75rem;
+  }
+
+  main .map {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  main .map iframe {
+    height: 300px;
+    
+  }
+}

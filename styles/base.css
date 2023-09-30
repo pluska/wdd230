@@ -67,12 +67,16 @@ nav ul li a:hover {
   color: var(--contrast-color);
 }
 
+.active::before {
+  content: "👉🏻 ";
+}
+
 main {
   max-width: 1600px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
   justify-items: center;
 }
 
@@ -110,9 +114,10 @@ main h2 {
 
 .map {
   width: 90%;
-  height: 400px;
   margin: auto;
   border-radius: 5px;
+  grid-column: 1/3;
+  grid-row: 3/4
 }
 
 footer {
