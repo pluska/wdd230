@@ -3,10 +3,15 @@ header {
   color: var(--white-color);
   padding: 1rem;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 300px 1fr 50px;
   grid-template-rows: 1fr;
   align-items: center;
   justify-items: center;
+}
+
+.dark-mode {
+  background-color: var(--dark-color);
+  color: var(--white-color);
 }
 
 .logo {
@@ -44,13 +49,147 @@ nav ul li a:hover {
   color: var(--secundary-color);
 }
 
+#switch-mode {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin: 0 1rem;
+}
+
+#switch-mode input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#switch-mode .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--secundary-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+#switch-mode .slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--white-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+#switch-mode input:checked + .slider {
+  background-color: var(--alternative-color);
+}
+
+#switch-mode input:focus + .slider {
+  box-shadow: 0 0 1px var(--alternative-color);
+}
+
+#switch-mode input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
 main {
   display: grid;
   grid-gap: 1rem;
   justify-items: center;
   align-items: center;
   min-height: 52vh;
-  margin: 3rem auto;
+  padding: 3rem 0;
+}
+
+#call-to-action {
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+}
+
+#invitation {
+  margin: 3rem;
+}
+
+#hero {
+  width: 90%;
+  min-height: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#carousel-item-1 {
+  background-image: url('../images/hero-image-city.jpg');
+}
+
+#carousel-item-2 {
+  background-image: url('../images/hero-image-networking.jpg');
+}
+
+#carousel-item-3 {
+  background-image: url('../images/hero-image-capacitation.jpg');
+}
+
+.carousel-item {
+  display: none;
+  width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  text-align: center;
+  padding: 1rem;
+  color: var(--white-color);
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+}
+
+.hero-buttons .button {
+  border-radius: 100%;
+}
+
+#weather, #events {
+  padding: 1rem;
+  text-align: center;
+}
+
+#weather h2, #events h2 {
+  margin-bottom: 1rem;
+}
+
+#weather p, #events p {
+  margin-bottom: 1rem;
 }
 
 footer {

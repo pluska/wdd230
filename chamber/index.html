@@ -30,14 +30,83 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <label id="switch-mode">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
   </header>
   <main>
     <h1>Chamber of Commerce</h1>
-    <section id="call-to-action"><h2>Call to action</h2></section>
-    <section id="hero"><h2>Hero</h2></section>
-    <section id="events"><h2>Events</h2></section>
-    <section id="weather"><h2>Weather</h2></section>
-    <section id="spotlights"><h2>Spotlights</h2></section>
+    <section id="call-to-action">
+      <div id="invitation">
+        <p>Unlock new opportunities for your business.</p>
+        <p>Join our Chamber of Commerce today!</p>
+      </div>
+      <button class="button">Join Us Here</button>
+    </section>
+    <section id="hero">
+        <div id="carousel-item-1" class="carousel-item active">
+          <div class="hero-text">
+            <p>Welcome to new opportunities for your business and economy</p>
+          </div>
+        </div>
+        <div id="carousel-item-2" class="carousel-item">
+          <div class="hero-text">
+            <p>Meet new people and grow your networking</p>
+          </div>
+        </div>
+        <div id="carousel-item-3" class="carousel-item">
+          <div class="hero-text">
+            <p>Grow your skills and knowledge</p>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <button class="button previous">⬅️</button>
+          <button class="button next">➡️</button>
+        </div>
+    </section>
+    <section id="events">
+      <h2>Events</h2>
+      <p>Join us for the ribbon cutting cermony!</p>
+      <p>Friday at 11:00 AM</p>
+      <button class="button">more info</button>
+    </section>
+    <section id="weather">
+      <h2>Weather</h2>
+      <p>20&deg;C - Sunchine</p>
+      <p>Humidity: 50%</p>
+      <p>Wind: 10km/h</p>
+    </section>
+    <section id="spotlights">
+      <h2>Spotlights</h2>
+      <div class="spotlight">
+        <h3 class="company-name">Digital Marketing</h3>
+        <p class="slogan">Digital Marketing Slogan</p>
+          <ul class="contact-information">
+            <li>email: <a href="mailto:">email</a></li>
+            <li>phone: <a href="tel:">phone</a></li>
+            <li>website: <a href="#">address</a></li>
+          </ul>
+      </div>
+      <div class="spotlight">
+        <h3 class="company-name">Global Services</h3>
+        <p class="slogan">Global Services Slogan</p>
+          <ul class="contact-information">
+            <li>email: <a href="mailto:">email</a></li>
+            <li>phone: <a href="tel:">phone</a></li>
+            <li>website: <a href="#">address</a></li>
+          </ul>
+      </div>
+      <div class="spotlight">
+        <h3 class="company-name">ABC Company</h3>
+        <p class="slogan">ABC Company Slogan</p>
+          <ul class="contact-information">
+            <li>email: <a href="mailto:">email</a></li>
+            <li>phone: <a href="tel:">phone</a></li>
+            <li>website: <a href="#">address</a></li>
+          </ul>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="contact-information">
@@ -49,6 +118,8 @@
     </div>
   </footer>
   <script src="./scripts/getdates.js"></script>
-  <script src="./scripts/hamburguer-menu.js"></script>
+  <script src="./scripts/burguer-menu.js"></script>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/dark-mode.js"></script>
 </body>
 </html>

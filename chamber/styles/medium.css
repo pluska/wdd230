@@ -1,6 +1,13 @@
 @media screen and (max-width: 800px) {
+  header {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
   nav {
-    height: 50px;
+    width: 100%;
+    height: 70px;
     position: relative;
   }
   #menu-button {
@@ -8,12 +15,25 @@
   }
   .navigation {
     display: none;
-    width: 100%;
+    width: 200px;
     position: absolute;
-    left: 0;
+    right: -50%;
+    top: 70px;
     background-color: var(--secundary-color);
     text-align: center;
   }
+  .navigation li {
+    padding: 1rem;
+    display: block;
+    border-bottom: 1px solid var(--white-color);
+  }
+  .navigation li:last-child {
+    border-bottom: none;
+  }
+  .navigation li a:hover {
+    color: var(--alternative-color);
+  }
+
   .open {
     display: block;
   }

@@ -25,9 +25,14 @@
   content: "×";
 }
 
+#switch-mode {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
 main {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px repeat(2, 1fr);
+  grid-template-rows: 50px repeat(2, 1fr) auto;
 }
 
 h1 {
@@ -51,11 +56,40 @@ h1 {
 }
 
 #weather {
-  grid-column: 2 / 3;
+  grid-column: 2 / 4;
   grid-row: 3 / 3;
 }
 
-#spotlight {
-  grid-column: 3 / 4;
-  grid-row: 3 / 3;
+#spotlights {
+  grid-column: 1 / 4;
+  grid-row: 4 / 4;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+#spotlights h2 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.spotlight {
+  grid-row: 2 / 3;
+}
+
+.company-name {
+  margin-bottom: 1rem;
+}
+
+.slogan  {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.contact-information li {
+  padding: 0.5rem;
 }
