@@ -14,6 +14,10 @@ header {
   color: var(--white-color);
 }
 
+.dark-mode a {
+  color: var(--white-color);
+}
+
 .logo {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -41,7 +45,8 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-family: var(--heading-typography);
   color: var(--white-color);
 }
 
@@ -130,6 +135,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  transition: all 0.7s ease-in-out;
 }
 
 #carousel-item-1 {
@@ -169,14 +176,28 @@ main {
 
 .hero-buttons {
   display: flex;
-  width: 100%;
+  width: 100px;
+  height: 30px;
   justify-content: space-around;
   align-items: center;
   position: absolute;
+  bottom: 90px;
+  background-color: var(--primary-color);
 }
 
-.hero-buttons .button {
+.hero-buttons .bullet {
+  padding: 0.4rem;
   border-radius: 100%;
+  cursor: pointer;
+  background-color: var(--secundary-color);
+}
+
+.hero-buttons .bullet:hover {
+  background-color: var(--alternative-color);
+}
+
+.hero-buttons .bullet.active {
+  background-color: var(--alternative-color);
 }
 
 #weather, #events {

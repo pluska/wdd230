@@ -1,25 +1,24 @@
 //carousel
 const carousel = document.querySelector('.carousel');
 const carouselItems = document.querySelectorAll('.carousel-item');
-const previousButton = document.querySelector('.previous');
-const nextButton = document.querySelector('.next');
+const bulletButtons = document.querySelectorAll('.bullet');
 
 let activeIndex = 0;
 
-nextButton.addEventListener('click', () => {
-  carouselItems[activeIndex].classList.remove('active');
-  activeIndex = (activeIndex + 1) % carouselItems.length;
-  carouselItems[activeIndex].classList.add('active');
-})
-
-previousButton.addEventListener('click', () => {
-  carouselItems[activeIndex].classList.remove('active');
-  activeIndex = (activeIndex - 1 + carouselItems.length) % carouselItems.length;
-  carouselItems[activeIndex].classList.add('active');
+bulletButtons.forEach((bullet, index) => {
+  bullet.addEventListener('click', () => {
+    carouselItems[activeIndex].classList.remove('active');
+    bulletButtons[activeIndex].classList.remove('active');
+    activeIndex = index;
+    carouselItems[activeIndex].classList.add('active');
+    bulletButtons[activeIndex].classList.add('active');
+  });
 })
 
 setInterval(() => {
   carouselItems[activeIndex].classList.remove('active');
+  bulletButtons[activeIndex].classList.remove('active');
   activeIndex = (activeIndex + 1) % carouselItems.length;
   carouselItems[activeIndex].classList.add('active');
+  bulletButtons[activeIndex].classList.add('active');
 }, 5000);
