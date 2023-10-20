@@ -32,6 +32,7 @@
   }
   #menu {
     display: block;
+    z-index: 2;
   }
   .navigation {
     display: none;
@@ -40,6 +41,7 @@
     left: 0;
     background-color: var(--secundary-color);
     text-align: center;
+    z-index: 1;
   }
   .open {
     display: block;

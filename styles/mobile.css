@@ -5,7 +5,7 @@
 
   main {
     grid-template-columns: 1fr;
-    grid-template-rows: 100px repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
     justify-items: center;
     align-items: center;
   }
@@ -13,21 +13,25 @@
   main h2 {
     font-size: 1.2rem;
     grid-column: 1/2;
-    grid-row: 1/2;
+    grid-row: 2/3;
+  }
+
+  .hero {
+    grid-column: 1/2;
   }
 
   .card {
     width: 250px;
   }
 
-  main .card:nth-child(2) {
+  main .card:nth-child(4) {
     grid-column: 1/2 !important;
-    grid-row: 2/3 !important;
+    grid-row: 3/4 !important;
   }
 
   main .card:nth-child(3) {
     grid-column: 1/2 !important;
-    grid-row: 3/4 !important;
+    grid-row: 4/5 !important;
   }
 
   .card-header h3 {
@@ -51,10 +55,9 @@
 
   main .map {
     grid-column: 1/2;
-    grid-row: 4/5;
+    grid-row: 5/6;
   }
   main .map iframe {
     height: 300px;
-    
   }
 }
