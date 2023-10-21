@@ -110,7 +110,7 @@ nav ul li a:hover {
 
 main {
   display: grid;
-  grid-gap: 1rem;
+  gap: 1rem;
   justify-items: center;
   align-items: center;
   min-height: 52vh;
@@ -128,9 +128,8 @@ main {
 }
 
 #hero {
-  width: 90%;
-  min-height: 400px;
-  margin: auto;
+  width: 100%;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,28 +137,17 @@ main {
   position: relative;
   transition: all 0.7s ease-in-out;
 }
-
-#carousel-item-1 {
-  background-image: url('../images/hero-image-city.jpg');
-}
-
-#carousel-item-2 {
-  background-image: url('../images/hero-image-networking.jpg');
-}
-
-#carousel-item-3 {
-  background-image: url('../images/hero-image-capacitation.jpg');
-}
-
 .carousel-item {
   display: none;
   width: 100%;
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding-right: 20px;
+  position: relative;
 }
 
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
 .active {
   display: flex;
   justify-content: center;
@@ -167,6 +155,7 @@ main {
 }
 
 .hero-text {
+  position: absolute;
   text-align: center;
   padding: 1rem;
   color: var(--white-color);
@@ -181,7 +170,7 @@ main {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  bottom: 90px;
+  bottom: 20%;
   background-color: var(--primary-color);
 }
 
