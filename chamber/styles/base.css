@@ -114,7 +114,7 @@ main {
   justify-items: center;
   align-items: center;
   min-height: 52vh;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 }
 
 #call-to-action {
@@ -127,16 +127,6 @@ main {
   margin: 3rem;
 }
 
-#hero {
-  width: 100%;
-  min-height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  transition: all 0.7s ease-in-out;
-}
 .carousel-item {
   display: none;
   width: 100%;
@@ -154,13 +144,26 @@ main {
   align-items: center;
 }
 
-.hero-text {
+#hero {
+  width: 100%;
+  position: relative;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+
+#hero-title {
   position: absolute;
   text-align: center;
-  padding: 1rem;
+  top: 10%;
+  left: 30%;
+  padding: 2rem;
   color: var(--white-color);
   background: rgba(0, 0, 0, 0.5);
-  font-size: 1.2rem;
 }
 
 .hero-buttons {
@@ -199,6 +202,26 @@ main {
 }
 
 #weather p, #events p {
+  margin-bottom: 1rem;
+}
+
+#weather input  {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#weather select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+#weather p {
   margin-bottom: 1rem;
 }
 

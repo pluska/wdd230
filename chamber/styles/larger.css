@@ -32,7 +32,7 @@
 
 main {
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 50px repeat(2, 1fr) auto;
+  grid-template-rows: auto repeat(2, 1fr) auto;
 }
 
 h1 {
@@ -41,12 +41,7 @@ h1 {
 }
 
 #call-to-action {
-  grid-column: 1 / 2;
-  grid-row: 2 / 2;
-}
-
-#hero {
-  grid-column: 2 / 4;
+  grid-column: 1 / 4;
   grid-row: 2 / 2;
 }
 

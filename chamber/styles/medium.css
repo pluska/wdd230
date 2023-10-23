@@ -89,10 +89,11 @@
     grid-row: 3 / 4;
   }
 
-  #hero {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: block;
+  #hero-title {
+    padding: 1rem;
+    font-size: 1.5rem;
+    top: 30%;
+    left: 18%;
   }
 
   .hero-buttons {
@@ -132,8 +133,6 @@
   #spotlights {
     grid-column: 1 / 2;
     grid-row: 6 / 7;
-    display: flex;
-    flex-direction: column;
   }
 
 }

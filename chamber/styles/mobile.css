@@ -1,0 +1,13 @@
+@media screen and (max-width: 500px) {
+  #hero-title {
+    font-size: 1rem;
+    left: 15%;
+  }
+  #spotlights {
+    display: flex;
+    flex-direction: column;
+  }
+  .spotlight {
+    margin: 5px;
+  }
+}
