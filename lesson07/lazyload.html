@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading</title>
+  <meta name="author" content="Andres Pluska">
+  <link rel="stylesheet" href="./styles/lazyload.css">
+</head>
+<body>
+  <header>
+    <h1>Lazy Loading</h1>
+  </header>
+  <main>
+    <picture>
+      <img src="https://loremflickr.com/400/600?random=1" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, nemo atque amet nulla error rem officia exercitationem esse ab ipsum placeat, delectus vero quisquam quos, temporibus impedit odio tempore dolor!</p>
+    <picture>
+      <img src="https://loremflickr.com/400/700?random=2" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+    <picture>
+      <img src="https://loremflickr.com/400/800?random=3" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+    <picture>
+      <img src="https://loremflickr.com/400/650?random=4" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+    <picture>
+      <img src="https://loremflickr.com/400/650?random=5" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+    <picture>
+      <img src="https://loremflickr.com/400/700?random=6" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+    </picture>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Andres Pluska Lima | Peru</p>
+  </footer>
+  <script src="./scripts/lazyload.js"></script>
+</body>
+</html>
