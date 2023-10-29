@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lima Chamber of Commerce</title>
+  <meta name="author" content="Andres Pluska">
+  <meta name="description" content="This is the main page for the Lima Chamber of Commerce">
+
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Lima Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://pluska.github.io/wdd230/chamber/images/logo.jpg">
+  <meta property="og:url" content="https://pluska.github.io/wdd230/chamber">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/larger.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="./images/logo.webp" alt="Logo for the Lima Chamber of Commerce" width="100" height="100"></div>
+    <nav>
+      <button id="menu-button" name="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label id="switch-mode">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </header>
+  <main id="discovery-main">
+    <section class="sidebar">
+      <div class="events">
+        <h2>Events</h2>
+        <ul>
+          <li>Christmas Tree Lighting | Dec 10, 2023</li>
+          <li>Great Fireworks | Dec 31, 2023</li>
+        </ul>
+      </div>
+      <div class="news">
+        <h2>News</h2>
+        <ul>
+          <li>"Emerging Markets Drive Global Trade Shift"</li>
+          <li>"Central Banks Reevaluate Policies Amid Stable Inflation"</li>
+          <li>"Tech Innovation Boosts Job Creation and Productivity"</li>
+        </ul>
+      </div>
+      <div class="statatistics">
+        <h2>Statistics</h2>
+        <ul>
+          <li>1 PEN = 0.28 USD</li>
+          <li>Annual Inflation: +2.3%</li>
+          <li>GDP Growth: +4.6%</li>
+          <li>Unemployment Rate: 3.9%</li>
+          <li>Stock Market Index: 1,245 points</li>
+        </ul>
+      </div>
+      <div class="demographics">
+        <h2>Demographics</h2>
+        <ul>
+          <li>Population: 1,000,000</li>
+          <li>Literacy Rate: 90%</li>
+          <li>Entrepreneurship Index: 7.5</li>
+        </ul>
+      </div>
+    </section>
+    <section class="gallery">
+      <picture>
+        <img src="./images/discovery-img-1.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+      <picture>
+        <img src="./images/discovery-img-2.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+      <picture>
+        <img src="./images/discovery-img-3.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+      <picture>
+        <img src="./images/discovery-img-4.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+      <picture>
+        <img src="./images/discovery-img-5.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+      <picture>
+        <img src="./images/discovery-img-6.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+      </picture>
+    </section>
+  </main>
+  <footer>
+    <div class="contact-information">
+      <p>Contact Information:</p>
+    </div>
+    <div class="author-information">
+      <p>&copy; <span id="currentYear"></span> Andres Pluska - WDD 230 - Web Frontend Development</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+  <script src="./scripts/getdates.js"></script>
+  <script src="./scripts/burguer-menu.js"></script>
+  <script src="./scripts/dark-mode.js"></script>
+  <script src="./scripts/windchill.js"></script>
+</body>
+</html>
