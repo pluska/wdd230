@@ -1,6 +1,6 @@
 const today = Date.now();
 const todayDate = new Date(today);
-let currentVisits = Number(window.localStorage.getItem("currentVisits-ls")) || 0;
+let currentVisits = Number(window.localStorage.getItem("currentDiscoverVisits-ls")) || 0;
 let lastVisitDate = Number(window.localStorage.getItem("lastVisitDate-ls")) || 0;
 let days = 1000 * 60 * 60 * 24;
 
@@ -20,6 +20,6 @@ if (currentVisits === 0) {
 
 currentVisits++;
 
-window.localStorage.setItem("currentVisits-ls", currentVisits);
+window.localStorage.setItem("currentDiscoverVisits-ls", currentVisits);
 
 window.localStorage.setItem("lastVisitDate-ls", today);
