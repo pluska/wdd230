@@ -262,13 +262,22 @@ main {
 }
 
 .gallery {
+  margin-top: 1rem;
   width: 100%;
   height: 100%;
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(500px, 1fr));
+  justify-items: center;
+  align-items: center;
   gap: 1rem;
+}
+
+.gallery img:hover {
+  box-shadow: 0 0 10px var(--primary-color);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 footer {

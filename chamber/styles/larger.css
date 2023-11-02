@@ -1,4 +1,4 @@
-#menu-button {
+#menu-button, #sidebar-menu {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
@@ -13,21 +13,25 @@
   border-radius: 5px;
 }
 
-#menu-button:hover {
+#menu-button:hover, #sidebar-menu:hover {
   background-color: var(--alternative-color);
 }
 
-#menu-button::before {
+#menu-button::before, #sidebar-menu::before {
   content: "☰";
 }
 
-#menu-button.open::before {
+#menu-button.open::before, #sidebar-menu.open::before {
   content: "×";
 }
 
 #switch-mode {
   grid-column: 3 / 4;
   grid-row: 1 / 2;
+}
+
+#sidebar-menu {
+  position: fixed;
 }
 
 main {

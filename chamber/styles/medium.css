@@ -18,6 +18,9 @@
   #menu-button {
     display: block;
   }
+  #sidebar-menu {
+    display: block;
+  }
   .navigation {
     display: none;
     width: 200px;
@@ -37,6 +40,41 @@
   }
   .navigation li a:hover {
     color: var(--alternative-color);
+  }
+
+  #discover-main {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    display: none;
+    height: 400px;
+    overflow-y: auto;
+  }
+
+  .sidebar h2 {
+    font-size: 1rem;
+  }
+
+  .sidebar p {
+    font-size: 0.6rem;
+  }
+
+  .gallery {
+    grid-column: 1 / 2;
+    grid-template-columns: 800px;
+    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery img:hover {
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
   }
 
   .open {

@@ -37,6 +37,7 @@
     </label>
   </header>
   <main id="discovery-main">
+    <button id="sidebar-menu" aria-label="Open Menu"></button>
     <section class="sidebar">
       <div class="events">
         <h2>Events</h2>
@@ -74,22 +75,34 @@
     </section>
     <section class="gallery">
       <picture>
-        <img src="./images/discovery-img-1.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-1-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-1-medium.webp">
+        <img src="./images/discovery-img-1.webp" alt="Historic Center" loading="lazy" width="1000" height="500">
       </picture>
       <picture>
-        <img src="./images/discovery-img-2.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-2-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-2-medium.webp">
+        <img src="./images/discovery-img-2.webp" alt="Huaca Lima" loading="lazy" width="1000" height="500">
       </picture>
       <picture>
-        <img src="./images/discovery-img-3.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-3-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-3-medium.webp">
+        <img src="./images/discovery-img-3.webp" alt="Palace of Justice" loading="lazy" width="1000" height="500">
       </picture>
       <picture>
-        <img src="./images/discovery-img-4.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-4-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-4-medium.webp">
+        <img src="./images/discovery-img-4.webp" alt="Huaca Huaral" loading="lazy" width="1000" height="500">
       </picture>
       <picture>
-        <img src="./images/discovery-img-5.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-5-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-5-medium.webp">
+        <img src="./images/discovery-img-5.webp" alt="Main Cathedral" loading="lazy" width="1000" height="500">
       </picture>
       <picture>
-        <img src="./images/discovery-img-6.jpg" alt="Random Image Placeholder" loading="lazy" width="400" height="600">
+        <source media="(max-width: 500px)" srcset="./images/discovery-img-6-small.webp">
+        <source media="(max-width: 800px)" srcset="./images/discovery-img-6-medium.webp">
+        <img src="./images/discovery-img-6.webp" alt="Center of Lima" loading="lazy" width="1000" height="500">
       </picture>
     </section>
   </main>
@@ -105,6 +118,6 @@
   <script src="./scripts/getdates.js"></script>
   <script src="./scripts/burguer-menu.js"></script>
   <script src="./scripts/dark-mode.js"></script>
-  <script src="./scripts/windchill.js"></script>
+  <script src="./scripts/visits.js"></script>
 </body>
 </html>

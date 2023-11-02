@@ -10,4 +10,14 @@
   .spotlight {
     margin: 5px;
   }
+  .gallery img:hover {
+    box-shadow: none;
+    transform: none;
+    transition: none;
+  }
+  .gallery {
+    grid-column: 1 / 2;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
