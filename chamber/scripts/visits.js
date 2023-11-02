@@ -3,7 +3,13 @@ const todayDate = new Date(today);
 let currentVisits = Number(window.localStorage.getItem("currentVisits-ls")) || 0;
 let lastVisitDate = Number(window.localStorage.getItem("lastVisitDate-ls")) || 0;
 
-
+function millisecondsToDays(milliseconds) {
+  let seconds = milliseconds / 1000;
+  let minutes = seconds / 60;
+  let hours = minutes / 60;
+  let days = hours / 24;
+  return days;
+}
 
 let days = 1000 * 60 * 60 * 24;
 let daysBetween = today - lastVisitDate;
@@ -13,7 +19,7 @@ if (currentVisits === 0) {
 } else if (daysBetween < days) {
   alert("Back so soon! Awesome!")
 } else {
-  alert("You last visited " + daysBetween / days + " days ago.")
+  alert("You last visited " + millisecondsToDays(daysBetween) + " days ago.")
 }
 
 currentVisits++;
