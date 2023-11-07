@@ -42,6 +42,10 @@ header h1 {
   grid-column: 3/4;
 }
 
+#menu {
+  display: none;
+}
+
 nav {
   background-color: var(--secundary-color);
   padding: 1rem;
