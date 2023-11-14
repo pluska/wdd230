@@ -173,4 +173,22 @@
     grid-row: 6 / 7;
   }
 
+  .join-form-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .join-form {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .memberships-container {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+
+
+
 }
