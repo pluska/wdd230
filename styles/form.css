@@ -40,9 +40,6 @@
   border: 2px solid #28a745;
 }
 
-input[type="range"]::webkit-slider-thumb {
-  background-color: var(--contrast-color);
-}
 
 .form-submit {
   padding: 0.5rem 1rem;
