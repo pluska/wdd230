@@ -389,30 +389,31 @@ footer {
   gap: 1rem;
   padding: 1rem;
   font-size: 1.3rem;
-  .membership {
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    width: 100%;
-    h3 {
-      font-size: 1.2rem;
-    }
-    p {
-      font-size: 0.8rem;
-      color: var(--secundary-color);
-    }
-    ul {
-      font-size: 0.8rem;
-      font-style: italic;
-      li {
-        list-style: inside;
-        
-      }
-    }
-  }
 }
 
+.membership {
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 100%;
+}
+
+.membership h3 {
+  font-size: 1.2rem;
+}
+.membership p {
+  font-size: 0.8rem;
+  color: var(--secundary-color);
+}
+.memberships ul {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.memberships ul li {
+  list-style: inside;
+}
 #thankyou-body {
   width: 100%;
   height: 100vh;
