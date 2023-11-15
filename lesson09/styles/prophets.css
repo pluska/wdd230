@@ -1,0 +1,38 @@
+header {
+  text-align: center;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  margin: 20px;
+  justify-items: center;
+}
+
+#cards section {
+  background-color: var(--white-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#cards section:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+#cards section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#cards section h2 {
+  margin-bottom: 10px;
+}
+
+#cards section p {
+  margin-bottom: 10px;
+}
