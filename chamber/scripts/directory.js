@@ -31,8 +31,8 @@ const displayMembers = (members) => {
     logo.src = baseURL + "images/" + member.image;
     logo.alt = member.name + " logo";
     logo.loading = "lazy";
-    logo.width = 200;
-    logo.height = 200;
+    logo.width = 100;
+    logo.height = 100;
     card.appendChild(logo);
     card.appendChild(name);
     card.appendChild(address);
