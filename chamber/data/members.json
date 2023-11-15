@@ -5,7 +5,7 @@
       "address": "123 Main St, Cityville",
       "phone": "+123-456-7890",
       "website": "http://www.companyA.com",
-      "image": "companyA_logo.png",
+      "image": "tech.webp",
       "membership_level": "Gold",
       "area": "Technology"
     },
@@ -14,7 +14,7 @@
       "address": "456 Oak Ave, Townsville",
       "phone": "+987-654-3210",
       "website": "http://www.companyB.com",
-      "image": "companyB_logo.png",
+      "image": "retail.webp",
       "membership_level": "Silver",
       "area": "Retail"
     },
@@ -23,7 +23,7 @@
       "address": "789 Pine Rd, Villageland",
       "phone": "+111-222-3333",
       "website": "http://www.companyC.com",
-      "image": "companyC_logo.png",
+      "image": "healthcare.webp",
       "membership_level": "Bronze",
       "area": "Healthcare"
     },
@@ -32,7 +32,7 @@
       "address": "321 Cedar Lane, Hamletville",
       "phone": "+444-555-6666",
       "website": "http://www.companyD.com",
-      "image": "companyD_logo.png",
+      "image": "finance.webp",
       "membership_level": "Platinum",
       "area": "Finance"
     },
@@ -41,7 +41,7 @@
       "address": "555 Elm Street, Boroughburg",
       "phone": "+777-888-9999",
       "website": "http://www.companyE.com",
-      "image": "companyE_logo.png",
+      "image": "manufacturing.webp",
       "membership_level": "Gold",
       "area": "Manufacturing"
     },
@@ -50,7 +50,7 @@
       "address": "888 Maple Ave, Cityburg",
       "phone": "+333-222-1111",
       "website": "http://www.companyF.com",
-      "image": "companyF_logo.png",
+      "image": "consulting.webp",
       "membership_level": "Silver",
       "area": "Consulting"
     },
@@ -59,7 +59,7 @@
       "address": "999 Birch Rd, Villageville",
       "phone": "+666-777-8888",
       "website": "http://www.companyG.com",
-      "image": "companyG_logo.png",
+      "image": "education.webp",
       "membership_level": "Bronze",
       "area": "Education"
     }
