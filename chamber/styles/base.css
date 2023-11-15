@@ -406,12 +406,12 @@ footer {
   font-size: 0.8rem;
   color: var(--secundary-color);
 }
-.memberships ul {
+.membership ul {
   font-size: 0.8rem;
   font-style: italic;
 }
 
-.memberships ul li {
+.membership ul li {
   list-style: inside;
 }
 #thankyou-body {
