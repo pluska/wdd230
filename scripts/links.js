@@ -5,12 +5,12 @@ const linksURL = baseURL + "data/links.json";
 const getLinks = async () => {
   const response = await fetch(linksURL);
   const data = await response.json();
-  displayLinks(data);
+  displayLinks(data.lessons);
 };
 
 const displayLinks = (weeks) => {
   const ul = document.querySelector("#activities");
-  weeks.lessons.forEach((week) => {
+  weeks.forEach((week) => {
     if (week.links.length > 1) {
       const li = document.createElement("li");
       li.textContent = `Week ${week.lesson}: `;
