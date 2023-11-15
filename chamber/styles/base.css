@@ -427,3 +427,120 @@ footer {
 button a {
   color: var(--white-color);
 }
+
+/* Directory */
+
+#directory-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr auto;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-container {
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.grid {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  width: 100%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.directory-btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+.directory-btn:hover {
+  background-color: var(--alternative-color);
+}
+.directory-btn.active {
+  background-color: var(--alternative-color);
+}
+.directory-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--secundary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#directory.list .card {
+  width: 90%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: var(--secundary-color);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 60px;
+}
+
+#directory.list .card img {
+  width: 60px;
+  height: 60px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: var(--white-color);
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.card a {
+  color: var(--alternative-color);
+}

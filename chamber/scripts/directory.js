@@ -2,10 +2,15 @@ const baseURL = "https://pluska.github.io/wdd230/chamber/";
 
 const membersURL = baseURL + "data/members.json";
 
+const gridBtnview = document.querySelector("#grid-btn");
+const listBtnview = document.querySelector("#list-btn");
+const directory = document.querySelector("#directory");
+
 const getMembers = async () => {
   const response = await fetch(membersURL);
   const data = await response.json();
-  displayMembers(data.members);
+  console.table(data);
+  displayMembers(data.companies);
 };
 
 const displayMembers = (members) => {
@@ -33,6 +38,22 @@ const displayMembers = (members) => {
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    document.querySelector("#cards-directory").appendChild(card);
+    directory.appendChild(card);
   })
 }
+
+getMembers();
+
+gridBtnview.addEventListener("click", () => {
+  directory.classList.remove("list");
+  gridBtnview.classList.add("active");
+  listBtnview.classList.remove("active");
+  directory.classList.add("grid");
+})
+
+listBtnview.addEventListener("click", () => {
+  directory.classList.remove("grid");
+  listBtnview.classList.add("active");
+  gridBtnview.classList.remove("active");
+  directory.classList.add("list");
+})

@@ -38,13 +38,17 @@
       <span class="slider"></span>
     </label>
   </header>
-  <main>
+  <main id="directory-main">
     <h1>Directory</h1>
-    <section id="directory">
-      <button class="directory-btn" id="grid-btn" aria-label="Grid View"></button>
-      <button class="directory-btn" id="list-btn" aria-label="List View"></button>
-      <div id="cards-directory">
-      </div>
+    <div class="btn-container">
+      <button class="directory-btn active" id="grid-btn" aria-label="Grid View">
+        <img src="./images/grid-icon.svg" alt="Grid View" width="50">
+      </button>
+      <button class="directory-btn" id="list-btn" aria-label="List View">
+        <img src="./images/list-icon.svg" alt="List View" width="50">
+      </button>
+    </div>
+    <section id="directory" class="grid">
     </section>
   </main>
   <footer>
@@ -59,6 +63,6 @@
   <script src="./scripts/getdates.js"></script>
   <script src="./scripts/burguer-menu.js"></script>
   <script src="./scripts/dark-mode.js"></script>
-  <script src="./scripts/windchill.js"></script>
+  <script src="./scripts/directory.js"></script>
 </body>
 </html>
