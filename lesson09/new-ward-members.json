@@ -1,0 +1,7 @@
+{
+  "family-name": "Doe",
+  "family-move-ward": "2000-01-01",
+  "people": "3",
+  "visited-bishopric": "true",
+  "family-members":  "[{name: 'John', gender: 'male', birthdate: '1980-03-01' }, {name: 'Jane', gender: 'female', birthdate: '1990-04-12' }, {name: 'Jill', gender: 'female', birthdate: '1994-06-21' }]"
+}
