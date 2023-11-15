@@ -84,7 +84,6 @@ main {
 
 main h2 {
   margin: 1.5rem;
-  grid-column: 1/2;
 }
 
 .hero {
