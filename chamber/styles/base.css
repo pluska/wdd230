@@ -483,10 +483,10 @@ button a {
   cursor: pointer;
 }
 .directory-btn:hover {
-  background-color: var(--alternative-color);
+  background-color: var(--secundary-color);
 }
 .directory-btn.active {
-  background-color: var(--alternative-color);
+  background-color: var(--primary-color);
 }
 .directory-btn img {
   width: 50px;
@@ -498,7 +498,7 @@ button a {
   height: 200px;
   padding: 1rem;
   border-radius: 5px;
-  background-color: var(--secundary-color);
+  background-color: var(--primary-color);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -511,7 +511,6 @@ button a {
   height: 100%;
   padding: 1rem;
   border-radius: 5px;
-  background-color: var(--secundary-color);
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -519,7 +518,6 @@ button a {
   justify-content: space-around;
   gap: 1rem;
 }
-
 
 #directory.list .card img {
   width: 60px;
@@ -529,14 +527,14 @@ button a {
 .card h3 {
   font-size: 1.2rem;
   margin: 0.5rem 0;
-  color: var(--white-color);
+  color: var(--secundary-color);
 }
 
 .card p {
   font-size: 0.8rem;
-  color: var(--primary-color);
+  color: var(--white-color);
 }
 
 .card a {
-  color: var(--alternative-color);
+  color: var(--secundary-color);
 }
