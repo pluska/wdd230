@@ -140,6 +140,12 @@ main h2 {
   text-align: center;
 }
 
+.weather-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .map {
   width: 90%;
   margin: auto;
