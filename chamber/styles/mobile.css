@@ -20,4 +20,7 @@
     grid-template-columns: 500px;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
   }
+  .weather-forecast {
+    flex-direction: column;
+  }
 }
