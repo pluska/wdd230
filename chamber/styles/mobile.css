@@ -23,4 +23,7 @@
   .weather-forecast {
     flex-direction: column;
   }
+  #banner p {
+    font-size: 0.8rem;
+  }
 }

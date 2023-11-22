@@ -46,6 +46,10 @@
     grid-template-columns: 1fr;
   }
 
+  #banner p {
+    font-size: 1rem;
+  }
+
   .sidebar {
     display: none;
     height: 400px;
