@@ -29,27 +29,38 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
-        <li><a href="chamber.html">Chamber</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="join.html">Contact</a></li>
       </ul>
     </nav>
     <label id="switch-mode">
       <input type="checkbox">
       <span class="slider"></span>
     </label>
+    <div id="banner">
+      <p>Come join us! For chamber meet and greet Wednesday at 7:00 p.m.</p>
+      <button type="button" class="close-button" id="close-banner">❌</button>
+    </div>
   </header>
-  <div id="banner">
-    <p>Come join us! For chamber meet and greet Wednesday at 7:00 p.m.</p>
-    <button type="button" class="close-button" id="close-banner">❌</button>
-  </div>
   <main>
-    <section id="hero">
-      <picture>
-        <source media="(max-width: 500px)" srcset="images/hero-image-small.webp">
-        <source media="(max-width: 800px)" srcset="images/hero-image-medium.webp">
-        <img src="images/hero-image-large.webp" alt="Hero Large Image" width="1500" height="1000">
+    <section id="hero" class="carousel">
+      <picture class="carousel-item active">
+        <source media="(max-width: 500px)" srcset="./images/hero-image-capacitation-small.webp">
+        <img src="./images/hero-image-capacitation.webp" alt="Chamber of Commerce" loading="lazy" width="1000" height="500">
+      </picture>
+      <picture class="carousel-item">
+        <source media="(max-width: 500px)" srcset="./images/hero-image-city-small.webp">
+        <img src="./images/hero-image-city.webp" alt="Chamber of Commerce" loading="lazy" width="1000" height="500">
+      </picture>
+      <picture class="carousel-item">
+        <source media="(max-width: 500px)" srcset="./images/hero-image-networking-small.webp">
+        <img src="./images/hero-image-networking.webp" alt="Chamber of Commerce" loading="lazy" width="1000" height="500">
       </picture>
       <h1 id="hero-title">Welcome to the Lima Chamber of Commerce</h1>
+      <div class="hero-buttons">
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+        <span class="bullet"></span>
+      </div>
   </section>
     <section id="call-to-action">
       <div id="invitation">
@@ -119,6 +130,7 @@
     </div>
   </footer>
   <script src="./scripts/banner.js"></script>
+  <script src="./scripts/carousel.js"></script>
   <script src="./scripts/getdates.js"></script>
   <script src="./scripts/burguer-menu.js"></script>
   <script src="./scripts/dark-mode.js"></script>

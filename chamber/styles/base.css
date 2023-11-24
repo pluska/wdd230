@@ -156,7 +156,6 @@ main {
 .carousel-item {
   display: none;
   width: 100%;
-  padding-right: 20px;
   position: relative;
 }
 
@@ -177,16 +176,11 @@ main {
   grid-row: 1 / 2;
 }
 
-#hero img {
-  width: 100%;
-  height: auto;
-}
-
 #hero-title {
   position: absolute;
   text-align: center;
-  top: 10%;
-  left: 30%;
+  top: 30%;
+  left: 22%;
   padding: 2rem;
   color: var(--white-color);
   background: rgba(0, 0, 0, 0.5);
@@ -200,6 +194,7 @@ main {
   align-items: center;
   position: absolute;
   bottom: 20%;
+  right: 50%;
   background-color: var(--primary-color);
 }
 

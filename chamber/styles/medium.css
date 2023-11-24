@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 
   h2 {
     font-size: 1.2rem;
@@ -23,12 +23,13 @@
   }
   .navigation {
     display: none;
-    width: 200px;
+    width: 400px;
     position: absolute;
-    right: -50%;
-    top: 70px;
+    right: 0;
+    top: 60px;
     background-color: var(--secundary-color);
     text-align: center;
+    z-index: 1;
   }
   .navigation li {
     padding: 1rem;
@@ -96,12 +97,6 @@
     grid-template-rows: repeat(6, auto);
   }
 
-  h1 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    font-size: 1.5rem;
-  }
-
   h2 {
     font-size: 1.2rem;
   }
@@ -127,30 +122,32 @@
   }
 
   #call-to-action {
+    width: 100%;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
   }
 
+  #hero {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
   #hero-title {
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     top: 30%;
-    left: 18%;
+    left: 20%;
   }
 
   .hero-buttons {
     width: 50px;
     height: 30px;
     bottom: 5%;
-    right: 41%;
+    left: 44%;
   }
 
   .hero-buttons .bullet {
-    padding: 0.3rem;
-  }
-
-  .hero-text {
-    font-size: 1rem;
+    padding: 0.25rem;
   }
 
   .carousel-item {
