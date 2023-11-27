@@ -28,7 +28,7 @@ const getThreeDayForecast = (weatherData) => {
       const desc = capitilize(forecastDay.weather[0].description);
       const temp = forecastDay.main.temp;
       threeDayForecast += `
-      <li class="weather-description"><img src="${iconsrc}" alt="${desc}"> ${day} ${hour}, ${temp.toFixed(0)}&deg;F ${forecastDay.weather[0].main}</li>
+      <li class="weather-description"><img src="${iconsrc}" alt="${desc}"> ${day} ${hour}h, ${temp.toFixed(0)}&deg;F ${forecastDay.weather[0].main}</li>
       `
     }
   }
