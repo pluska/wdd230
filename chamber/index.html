@@ -26,7 +26,7 @@
     <nav>
       <button id="menu-button" name="menu"></button>
       <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Contact</a></li>
@@ -78,7 +78,6 @@
     <section id="weather">
       <h2>Weather</h2>
       <div id="weather-info">
-        
       </div>
         <input type="text" placeholder="Temperature" id="temperature">
         <input type="text" placeholder="Wind Speed" id="wind-speed">
@@ -91,38 +90,13 @@
     </section>
     <section id="spotlights">
       <h2>Spotlights</h2>
-      <div class="spotlight">
-        <h3 class="company-name">Digital Marketing</h3>
-        <p class="slogan">Digital Marketing Slogan</p>
-          <ul class="contact-information">
-            <li>email: <a href="mailto:">email</a></li>
-            <li>phone: <a href="tel:">phone</a></li>
-            <li>website: <a href="#">address</a></li>
-          </ul>
-      </div>
-      <div class="spotlight">
-        <h3 class="company-name">Global Services</h3>
-        <p class="slogan">Global Services Slogan</p>
-          <ul class="contact-information">
-            <li>email: <a href="mailto:">email</a></li>
-            <li>phone: <a href="tel:">phone</a></li>
-            <li>website: <a href="#">address</a></li>
-          </ul>
-      </div>
-      <div class="spotlight">
-        <h3 class="company-name">ABC Company</h3>
-        <p class="slogan">ABC Company Slogan</p>
-          <ul class="contact-information">
-            <li>email: <a href="mailto:">email</a></li>
-            <li>phone: <a href="tel:">phone</a></li>
-            <li>website: <a href="#">address</a></li>
-          </ul>
-      </div>
     </section>
   </main>
   <footer>
     <div class="contact-information">
       <p>Contact Information:</p>
+      <p>Phone: +51 999 999 999</p>
+      <p>Email: contact@limachamber.com</p>
     </div>
     <div class="author-information">
       <p>&copy; <span id="currentYear"></span> Andres Pluska - WDD 230 - Web Frontend Development</p>
@@ -134,6 +108,7 @@
   <script src="./scripts/getdates.js"></script>
   <script src="./scripts/burguer-menu.js"></script>
   <script src="./scripts/dark-mode.js"></script>
+  <script src="./scripts/spotlight.js"></script>
   <script src="./scripts/weather.js"></script>
   <script src="./scripts/windchill.js"></script>
 </body>

@@ -1,5 +1,9 @@
 @media only screen and (max-width: 500px) {
 
+  h1 {
+    font-size: 1.5rem;
+  }
+
   .navigation {
     top: 60px;
     right: -80%;
@@ -28,20 +32,49 @@
   .spotlight {
     margin: 5px;
   }
+
+  #discovery-main {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  #discovery-main h1 {
+    grid-column: 1 / 2;
+    font-size: 1.2rem;
+  }
   .gallery img:hover {
     box-shadow: none;
     transform: none;
     transition: none;
   }
   .gallery {
+    width: 450px;
     grid-column: 1 / 2;
-    grid-template-columns: 500px;
+    display: grid;
+    grid-template-columns: 450px;
     grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
   }
+
+  .gallery picture {
+    width: 100%;
+  }
+
   .weather-forecast {
     flex-direction: column;
   }
   #banner p {
     font-size: 0.8rem;
+  }
+
+  footer {
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+      gap: 0.5rem;
   }
 }

@@ -33,7 +33,7 @@
       "phone": "+444-555-6666",
       "website": "http://www.companyD.com",
       "image": "finance.webp",
-      "membership_level": "Platinum",
+      "membership_level": "NPM",
       "area": "Finance"
     },
     {
@@ -51,7 +51,7 @@
       "phone": "+333-222-1111",
       "website": "http://www.companyF.com",
       "image": "consulting.webp",
-      "membership_level": "Silver",
+      "membership_level": "Bronze",
       "area": "Consulting"
     },
     {
