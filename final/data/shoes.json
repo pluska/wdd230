@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "name": "Urban Glide Sneakers",
+      "description": "Trendy and comfortable sneakers perfect for everyday wear.",
+      "sizes": ["6", "7", "8", "9", "10", "11"],
+      "gender": "Unisex",
+      "image_url": "placeholder_for_image_url",
+      "price": "$89.99"
+    },
+    {
+      "name": "Classic Leather Loafers",
+      "description": "Elegant and sleek, ideal for formal occasions.",
+      "sizes": ["7", "8", "9", "10", "11", "12"],
+      "gender": "Men",
+      "image_url": "placeholder_for_image_url",
+      "price": "$119.99"
+    },
+    {
+      "name": "Sunset Canvas Flats",
+      "description": "Bright and comfortable flats for a casual, chic look.",
+      "sizes": ["5", "6", "7", "8", "9"],
+      "gender": "Women",
+      "image_url": "placeholder_for_image_url",
+      "price": "$59.99"
+    },
+    {
+      "name": "High-Rise Athletic Shoes",
+      "description": "High-performance athletic shoes for sports and outdoor activities.",
+      "sizes": ["6", "7", "8", "9", "10", "11"],
+      "gender": "Unisex",
+      "image_url": "placeholder_for_image_url",
+      "price": "$99.99"
+    },
+    {
+      "name": "Eco-Friendly Walking Shoes",
+      "description": "Environmentally friendly shoes, combining comfort and sustainability.",
+      "sizes": ["6", "7", "8", "9", "10"],
+      "gender": "Unisex",
+      "image_url": "placeholder_for_image_url",
+      "price": "$79.99"
+    },
+    {
+      "name": "Fashion Ankle Boots",
+      "description": "Stylish ankle boots, perfect for a modern urban look.",
+      "sizes": ["6", "7", "8", "9"],
+      "gender": "Women",
+      "image_url": "placeholder_for_image_url",
+      "price": "$109.99"
+    },
+    {
+      "name": "Rugged Outdoor Boots",
+      "description": "Durable and sturdy boots for hiking and outdoor adventures.",
+      "sizes": ["8", "9", "10", "11", "12"],
+      "gender": "Men",
+      "image_url": "placeholder_for_image_url",
+      "price": "$139.99"
+    },
+    {
+      "name": "Kids' Colorful Sandals",
+      "description": "Fun and safe sandals for kids, perfect for summertime play.",
+      "sizes": ["1", "2", "3", "4", "5"],
+      "gender": "Kids",
+      "image_url": "placeholder_for_image_url",
+      "price": "$34.99"
+    },
+    {
+      "name": "Velvet Evening Pumps",
+      "description": "Elegant velvet pumps, ideal for formal events and parties.",
+      "sizes": ["5", "6", "7", "8", "9"],
+      "gender": "Women",
+      "image_url": "placeholder_for_image_url",
+      "price": "$129.99"
+    },
+    {
+      "name": "Lightweight Running Trainers",
+      "description": "Ultra-lightweight trainers for the avid runner seeking performance and style.",
+      "sizes": ["6", "7", "8", "9", "10", "11"],
+      "gender": "Unisex",
+      "image_url": "placeholder_for_image_url",
+      "price": "$94.99"
+    }
+  ]
+}
