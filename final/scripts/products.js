@@ -1,7 +1,6 @@
 const url = "https://pluska.github.io/wdd230/final/data/shoes.json";
 
 const container = document.querySelector("#products");
-const products = []
 
 const displayProducts = (products) => {
   products.forEach((product) => {
@@ -36,8 +35,7 @@ const displayProducts = (products) => {
 const getProducts = async () => {
   const response = await fetch(url);
   const data = await response.json();
-  products.push(...data.products);
-  displayProducts();
+  displayProducts(data.products);
 }
 
 getProducts();
