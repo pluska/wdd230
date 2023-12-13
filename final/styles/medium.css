@@ -1,0 +1,103 @@
+@media only screen and (max-width: 800px)  {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p, li {
+    font-size: 0.8rem;
+  }
+
+  header {
+    grid-template-columns: 300px 100px auto;
+    gap: 2rem;
+  }
+
+  #menu-button {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .navigation {
+    display: none;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: var(--color-secondary);
+    text-align: center;
+    z-index: 1;
+  }
+
+  .hero-text h1 span {
+    font-size: 1.8rem;
+  }
+
+  #sales ul li p {
+    font-size: 1rem;
+  }
+
+  .offers {
+    height: 300px;
+  }
+
+  main {
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  #products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #join-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr;
+  }
+
+  .form {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .form-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 300px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .container picture {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 80%;
+  }
+
+}

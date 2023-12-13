@@ -1,0 +1,86 @@
+@media only screen and (max-width: 500px) {
+  h1 {
+    grid-column: 1/2;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p, li {
+    font-size: 0.8rem;
+  }
+
+  header {
+    grid-template-columns: 300px 50px 50px;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .hero-text h1 {
+    color: var(--color-black);
+  }
+
+
+  .dark-mode .hero-text {
+    color: var(--color-white);
+  }
+
+  .hero-text h1 span {
+    font-size: 1.6rem;
+  }
+
+  .offers {
+    height: auto;
+  }
+
+  .offers h2 {
+    background-color: transparent;
+    color: var(--color-black);
+  }
+
+  #sales {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #new_products {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #contact {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+
+  #products {
+    grid-column: 1/2;
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    grid-column: 1/2;
+  }
+
+  #join-form {
+    grid-column: 1/2;
+  }
+}

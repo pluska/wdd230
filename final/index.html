@@ -6,8 +6,15 @@
   <title>Dany Shoes | For every step of your Journey</title>
   <meta name="author" content="Andres Pluska">
   <meta name="description" content="This is the main page for the Dany Shoes Store">
+  <meta name="og:title" property="og:title" content="Dany Shoes">
+  <meta name="og:type" property="og:type" content="website">
+  <meta name="og:image" property="og:image" content="https://pluska.github.io/wdd230/final/images/logo.webp">
+  <meta name="og:url" property="og:url" content="https://pluska.github.io/wdd230/final/">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(max-width: 800px)">
+  <link rel="stylesheet" href="styles/small.css" media="(max-width: 500px)">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -15,13 +22,18 @@
       <img src="./images/logo.webp" alt="Danny Shoes Logo" width="150" height="150">
     </div>
     <nav>
-      <ul>
+      <button id="menu-button"  title="menu"></button>
+      <ul class="navigation">
         <li class="current"><a href="index.html">Home</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="join.html">Contact</a></li>
       </ul>
     </nav>
+    <label id="mode">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
   </header>
   <main>
     <section class="hero">
@@ -32,15 +44,57 @@
         <picture>
           <source media="(max-width: 500px)" srcset="images/hero-small.webp">
           <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
-          <img src="images/hero-large.webp" alt="Dany Shoes" width="1200" loading="lazy">
+          <img src="images/hero-large.webp" alt="A Family in the park" width="1200">
         </picture>
       </div>
     </section>
-    <section id="sales" class="card"></section>
-    <section id="testimonies" class="card"></section>
+    <section id="sales" class="offers">
+      <h2>Sales</h2>
+      <ul>
+        <li class="show">
+          <p>Enjoy a festive 35% discount and walk in a Winter Wonderland with Danny Shoes' Jingle Boot Sale!</p>
+        </li>
+        <li>
+          <p>Celebrate a green Christmas this year! Our Christmas Green-Lights Sale offers you up to 25% off on our eco-friendly line.</p>
+        </li>
+        <li>
+          <p>Make Family Time More Magical with our Family Festive Frenzy! Buy two pairs of any footwear and get the third pair free</p>
+        </li>
+      </ul>
+    </section>
+    <section id="new_products" class="offers">
+      <h2>New Products</h2>
+      <ul>
+        <li class="show">
+          <img src="images/kids_colorful_sandals.webp" alt="Kids Colorful Sandals" width="200" loading="lazy">
+          <h3>Kids Colorful Sandals</h3>
+        </li>
+        <li>
+          <img src="images//urban_glide_sneakers.webp" alt="Urban Glide Sneakers" width="200" loading="lazy">
+          <h3>Urban Glide Sneakers</h3>
+        </li>
+        <li>
+          <img src="images/sunset_canvas_flats.webp" alt="Sunset Canvas Flats" width="200" loading="lazy">
+          <h3>Sunset Canvas Flats</h3>
+        </li>
+      </ul>
+    </section>
+    <section class="offers" id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>Call us at 1-800-555-5555</li>
+        <li>Send us an email <a href="mailto:hello@dannyshoes.com">hello@dannyshoes.com</a></li>
+        <li>Or go to our contact page <a href="join.html">here</a></li>
+        <li>If you wanna know more about us visit or <a href="about.html">about page</a></li>
+      </ul>
+
+    </section>
   </main>
   <footer>
     <p>&copy; 2023 Danny Shoes Lima | Peru</p>
   </footer>
+  <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/sales_carousel.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>

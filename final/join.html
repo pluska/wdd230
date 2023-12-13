@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dany Shoes | For every step of your Journey</title>
+  <meta name="author" content="Andres Pluska">
+  <meta name="description" content="This is the main page for the Dany Shoes Store">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./images/logo.webp" alt="Danny Shoes Logo" width="150" height="150">
+    </div>
+    <nav>
+      <button id="menu-button" name="menu"></button>
+      <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="current"><a href="join.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label id="mode">
+      <input type="checkbox">
+      <span class="slider"></span>
+    </label>
+  </header>
+  <main>
+    <h1>Do you want to be part of this family?</h1>
+    <section id="join-form">
+      <form action="thankyou.html" method="GET" class="form">
+        <div class="form-input">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        </div>
+        <div class="form-input">
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+        <div class="form-input">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" required>
+        </div>
+        <div class="form-input">
+          <label for="purpuse">Purpuse</label>
+          <select name="purpuse" id="purpuse" required>
+            <option value="buy">Buy Shoes</option>
+            <option value="sell">Sell Shoes</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" required>
+        </div>
+        <div class="form-textarea">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="form-img">
+        <img src="./images/contact.webp" alt="Contact Service Girl" width="500" loading="lazy">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Danny Shoes Lima | Peru</p>
+  </footer>
+  <script src="scripts/dark-mode.js"></script>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>

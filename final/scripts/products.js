@@ -11,10 +11,18 @@ const displayProducts = (products) => {
     const gender = document.createElement("span");
     const sizes = document.createElement("select");
     const img = document.createElement("img");
+    const buyBtn = document.createElement('button')
     h3.textContent = product.name;
     description.textContent = product.description;
-    price.textContent = product.price;
-    gender.textContent = product.gender;
+    price.textContent = `Price: ${product.price}`;
+    gender.textContent = `${product.gender}`;
+    if (product.gender === 'Men') {
+      gender.classList.add('men')
+    } else if(product.gender === 'Women') {
+      gender.classList.add('women')
+    } else {
+      gender.classList.add('unisex')
+    }
     img.src = product.image_url;
     img.alt = product.name;
     product["sizes"].forEach((size) => {
@@ -23,12 +31,17 @@ const displayProducts = (products) => {
       option.textContent = size;
       sizes.appendChild(option);
     });
+    buyBtn.textContent = "Buy"
+    buyBtn.classList.add("btn")
+
+    article.appendChild(img);
     article.appendChild(h3);
     article.appendChild(description);
     article.appendChild(price);
-    article.appendChild(gender);
+    price.appendChild(gender);
     article.appendChild(sizes);
-    article.appendChild(img);
+    article.appendChild(buyBtn);
+    article.classList.add("card");
     container.appendChild(article);
   })
 }
